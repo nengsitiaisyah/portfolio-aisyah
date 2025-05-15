@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Portofolio Neng Siti Aisyah</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-p...==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
   * {
     box-sizing: border-box;
   }
@@ -19,17 +19,26 @@
   }
 
   .container {
-    max-width: 900px;
+    max-width: 960px;
     margin: 40px auto;
     background: white;
     padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
   }
 
   header {
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #2563eb;
   }
 
   header h1 {
@@ -74,6 +83,9 @@
     border-radius: 8px;
     font-weight: 600;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .projects-grid {
@@ -98,6 +110,9 @@
     margin-top: 0;
     font-weight: 700;
     color: #1e40af;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .project-card p {
@@ -141,6 +156,7 @@
 <body>
   <div class="container">
     <header>
+      <img src="foto-aisyah.jpg" alt="Foto Neng Siti Aisyah" class="profile-photo" />
       <h1>Neng Siti Aisyah</h1>
       <p>Lulusan SMK Rekayasa Perangkat Lunak, passionate web developer yang terus belajar dan berkembang.</p>
     </header>
@@ -148,10 +164,10 @@
     <section>
       <h2>Skill</h2>
       <ul class="skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-php"></i> PHP</li>
       </ul>
     </section>
 
@@ -159,15 +175,15 @@
       <h2>Proyek</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>To-Do List + Kalender Ulang Tahun</h3>
+          <h3><i class="fas fa-calendar-check"></i> To-Do List + Kalender Ulang Tahun</h3>
           <p>Aplikasi web sederhana untuk mencatat tugas harian dan pengingat ulang tahun, dibuat dengan HTML, CSS, JavaScript, dan PHP.</p>
         </div>
         <div class="project-card">
-          <h3>Profile Web Mirip Facebook</h3>
+          <h3><i class="fas fa-user-circle"></i> Profile Web Mirip Facebook</h3>
           <p>Halaman profil dengan tampilan dan fitur mirip media sosial yang interaktif dan responsif.</p>
         </div>
         <div class="project-card">
-          <h3>Website Wisata</h3>
+          <h3><i class="fas fa-map-marked-alt"></i> Website Wisata</h3>
           <p>Website destinasi wisata dengan galeri gambar dan deskripsi yang menarik dan mudah dinavigasi.</p>
         </div>
       </div>
@@ -178,4 +194,4 @@
     </footer>
   </div>
 </body>
-</html>
+  </html>
