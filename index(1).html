@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portofolio Neng Siti Aisyah</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    color: #333;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #1f2937;
+  }
+
+  header p {
+    margin: 8px 0 0;
+    font-size: 1.1rem;
+    color: #4b5563;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #111827;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skills-list li {
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    background: #f9fafb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 8px 20px rgba(37,99,235,0.4);
+  }
+
+  .project-card h3 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #1e40af;
+  }
+
+  .project-card p {
+    margin-bottom: 0;
+    color: #374151;
+    line-height: 1.4;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #6b7280;
+  }
+
+  footer a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px 25px;
+      margin: 20px 10px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Neng Siti Aisyah</h1>
+      <p>Lulusan SMK Rekayasa Perangkat Lunak, passionate web developer yang terus belajar dan berkembang.</p>
+    </header>
+
+    <section>
+      <h2>Skill</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Proyek</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>To-Do List + Kalender Ulang Tahun</h3>
+          <p>Aplikasi web sederhana untuk mencatat tugas harian dan pengingat ulang tahun, dibuat dengan HTML, CSS, JavaScript, dan PHP.</p>
+        </div>
+        <div class="project-card">
+          <h3>Profile Web Mirip Facebook</h3>
+          <p>Halaman profil dengan tampilan dan fitur mirip media sosial yang interaktif dan responsif.</p>
+        </div>
+        <div class="project-card">
+          <h3>Website Wisata</h3>
+          <p>Website destinasi wisata dengan galeri gambar dan deskripsi yang menarik dan mudah dinavigasi.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>GitHub: <a href="https://github.com/nengsitiaisyah" target="_blank">github.com/nengsitiaisyah</a></p>
+    </footer>
+  </div>
+</body>
+</html>
